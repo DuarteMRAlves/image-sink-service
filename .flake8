@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    # Ignore git directory
+    .git,
+    # Ignore Caches
+    __pycache__,
+    # Ignore grpc generated core
+    /**/*_pb2.py,
+    # Ignore grpc generated code
+    /**/*_pb2_grpc.py,
+max-complexity = 10
